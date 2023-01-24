@@ -1,30 +1,15 @@
-import { ComponentMeta } from '@storybook/react'
-import { Avatar } from 'react95'
-
-import Photo from '../assets/photo.png'
-import { Card } from '../styles/template-styles'
-
-export default {
-  title: 'Other/Avatar',
-  component: Avatar,
-  decorators: [(story) => <Card>{story()}</Card>],
-} as ComponentMeta<typeof Avatar>
+import { UserCard } from '../components/UserCard'
+import { UserCardContainer } from '../styles/template-styles'
 
 export function Home() {
   return (
-    <Card>
-      <div>
-        <Avatar square size={250}>
-          <span role="img" aria-label="avatar">
-            <img src={Photo} alt="" />
-          </span>
-        </Avatar>
-        <p>Usuário</p>
-      </div>
-    </Card>
+    <>
+      <UserCardContainer>
+        <h1>Quem está assistindo?</h1>
+        <div>
+          <UserCard name="Nathan" />
+        </div>
+      </UserCardContainer>
+    </>
   )
-}
-
-Home.story = {
-  name: 'Home',
 }
