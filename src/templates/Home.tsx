@@ -5,7 +5,7 @@ export function Home() {
   return (
     <>
       <UserCardContainer>
-        <h1>Quem está assistindo?</h1>
+        <h1>Quem esta assistindo?</h1>
         <div>
           <UserCard name="Nathan" />
         </div>

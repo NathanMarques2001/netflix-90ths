@@ -42,6 +42,8 @@ export const LoadingBar = styled.div`
 
 export const Navbar = styled.div`
   font-family: 'ms_sans_serif';
+  z-index: 9999;
+  position: absolute;
 
   div{
     display: flex;
@@ -77,5 +79,30 @@ export const Navbar = styled.div`
       margin-top: 40%;
     }
   }
+`
 
+export const MovieType = styled.div`
+  font-family: 'ms_sans_serif';
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0 0 0 3%;
+`
+
+export const List = styled.section`
+  padding-left: 2%;
+  overflow-x: hidden;
+`
+
+export const Banner = styled.div`
+  width: 9999999999999px;
+  font-family: 'ms_sans_serif';
+
+  img{
+    width: 100%;
+  }
+  img:hover{
+    transform: scale(1.1);
+    transition: all ease 0.2s;
+    cursor: pointer;
+  }
 `

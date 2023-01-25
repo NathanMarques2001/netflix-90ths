@@ -30,7 +30,11 @@ export function Tile() {
   return (
     <LoadingBar>
       <div>
-        <ProgressBar variant="tile" value={Math.floor(percent)} style={{width: '70%'}} />
+        <ProgressBar
+          variant="tile"
+          value={Math.floor(percent)}
+          style={{ width: '70%' }}
+        />
       </div>
     </LoadingBar>
   )

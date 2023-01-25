@@ -36,29 +36,34 @@ export function NavBar() {
                 alt="netflix logo"
                 style={{ height: '60px' }}
               />
-              <div className='list-nav' style={{ width: '30%' }}>
-                <p className="Inicio-p">Início</p>
-                <p>Séries</p>
+              <div className="list-nav" style={{ width: '30%' }}>
+                <p className="Inicio-p">Inicio</p>
+                <p>Series</p>
                 <p>Filmes</p>
                 <p className="Bombando-p">Bombando</p>
                 <p>Minha lista</p>
               </div>
             </div>
-            <div className='input-button' style={{ width: '30%' }}>
+            <div className="input-button" style={{ width: '30%' }}>
               <TextInput
-                placeholder="Títulos e gêneros..."
+                placeholder="Titulos e generos..."
                 style={{ minWidth: '120px' }}
               />
-              <div className='avatar-button' style={{ width: '30%' }}>
+              <div className="avatar-button" style={{ width: '30%' }}>
                 <Avatar square size={'60%'}>
-                  <img src={Photo} alt="photo" width={'100%'} className='avatar'/>
+                  <img
+                    src={Photo}
+                    alt="photo"
+                    width={'100%'}
+                    className="avatar"
+                  />
                 </Avatar>
                 <Button
                   variant="thin"
                   onClick={() => setOpen(!open)}
                   size="sm"
                   active={open}
-                  className='menu-button'
+                  className="menu-button"
                 >
                   <img src={Arrow} alt="arrow" width={16} />
                 </Button>
