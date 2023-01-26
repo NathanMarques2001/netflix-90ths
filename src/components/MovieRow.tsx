@@ -1,31 +1,32 @@
-import { Movie } from '../utils/interfaces'
+import { HomeListItem } from '../utils/interfaces'
 import React from 'react'
 import { Banner, MovieType } from '../styles/component-styles'
-import { GroupBox, Window, WindowContent } from 'react95'
+import { Frame } from 'react95'
 
-export const MovieRow: React.FC<Movie> = ({ title, slug, items }) => {
+export const MovieRow: React.FC<HomeListItem> = ({ title, items }) => {
   return (
     <div>
       <MovieType>{title}</MovieType>
       <Banner>
-        {items.results.length > 0 &&
-          items.results.map((item, index) => (
+        {items.length > 0 &&
+          items.map((item, index) => (
             <div
               key={index}
               style={{ display: 'inline-block', width: '250px' }}
             >
-              <GroupBox
+              <Frame
                 style={{
-                  padding: '0',
-                  margin: '0',
+                  padding: '0.5rem',
+                  height: '370px',
                   transform: 'scale(0.9)',
+                  display: 'flex',
                 }}
               >
                 <img
                   src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
                   alt={item.original_title}
                 />
-              </GroupBox>
+              </Frame>
             </div>
           ))}
       </Banner>

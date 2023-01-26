@@ -85,7 +85,11 @@ export const MovieType = styled.div`
   font-family: 'ms_sans_serif';
   font-weight: bold;
   font-size: 30px;
-  margin: 0 0 0 3%;
+  margin: 80px 0 0 30px;
+
+  @media(max-width: 760px) {
+    margin: 140px 0 0 30px;
+}
 `
 
 export const List = styled.section`
@@ -94,15 +98,17 @@ export const List = styled.section`
 `
 
 export const Banner = styled.div`
-  width: 9999999999999px;
+  width: 9999999999px;
   font-family: 'ms_sans_serif';
 
   img{
     width: 100%;
   }
   img:hover{
-    transform: scale(1.1);
     transition: all ease 0.2s;
     cursor: pointer;
   }
+`
+export const ContainerImg = styled.div`
+transform: scale(1.1);
 `
