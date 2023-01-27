@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import API from '../services/API'
-import { List } from '../styles/component-styles'
 import { FeatureMovieData, HomeListItem } from '../utils/interfaces'
 import { FeatureMovie } from './FeatureMovie'
 import { MovieRow } from './MovieRow'
+import { Window } from 'react95'
 
 export function MovieList() {
   const [movieList, setMovieList] = useState<HomeListItem[]>()
@@ -20,7 +20,6 @@ export function MovieList() {
       )
       const chosen = originals[0].items[randomChosen]
       const chosenInformations = await API.getFeatureMovie(chosen.id)
-      console.log(chosenInformations)
       setFeatureData(chosenInformations)
     }
     loadAll()
@@ -28,18 +27,29 @@ export function MovieList() {
 
   return (
     <>
-      {featureData && <FeatureMovie {...featureData}/>}
-      <List>
-        {movieList?.map((movie, index) => (
-          <MovieRow
-            key={index}
-            title={movie.title}
-            slug={movie.slug}
-            items={movie.items}
-            adult
-          />
-        ))}
-      </List>
+      {featureData && <FeatureMovie {...featureData} />}
+      <Window
+        style={{
+          maxWidth: '100%',
+          marginTop: '-120px'
+        }}
+      >
+        <div
+          style={{
+            overflowX: 'hidden',
+          }}
+        >
+          {movieList?.map((movie, index) => (
+            <MovieRow
+              key={index}
+              title={movie.title}
+              slug={movie.slug}
+              items={movie.items}
+              adult
+            />
+          ))}
+        </div>
+      </Window>
     </>
   )
 }

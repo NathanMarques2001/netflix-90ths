@@ -85,20 +85,11 @@ export const MovieType = styled.div`
   font-family: 'ms_sans_serif';
   font-weight: bold;
   font-size: 30px;
-  margin: 80px 0 0 30px;
 
-  @media(max-width: 760px) {
-    margin: 140px 0 0 30px;
-}
-`
-
-export const List = styled.section`
-  padding-left: 2%;
-  overflow-x: hidden;
 `
 
 export const Banner = styled.div`
-  width: 9999999999px;
+  width: 9999px;
   font-family: 'ms_sans_serif';
 
   img{
