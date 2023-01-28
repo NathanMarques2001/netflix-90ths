@@ -89,7 +89,6 @@ export const MovieType = styled.div`
 `
 
 export const Banner = styled.div`
-  width: 9999px;
   font-family: 'ms_sans_serif';
 
   img{
@@ -102,4 +101,13 @@ export const Banner = styled.div`
 `
 export const ContainerImg = styled.div`
 transform: scale(1.1);
+`
+
+export const ButtonContainer = styled.div`
+  position: absolute;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
 `

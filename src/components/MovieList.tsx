@@ -31,7 +31,7 @@ export function MovieList() {
       <Window
         style={{
           maxWidth: '100%',
-          marginTop: '-120px'
+          marginTop: '-120px',
         }}
       >
         <div
