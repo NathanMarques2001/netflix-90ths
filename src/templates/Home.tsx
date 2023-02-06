@@ -1,5 +1,5 @@
-import { UserCard } from '../components/UserCard'
-import { UserCardContainer } from '../styles/template-styles'
+import { UserCard } from '../components/UserCard';
+import { UserCardContainer } from '../styles/template-styles';
 
 export function Home() {
   return (
@@ -11,5 +11,5 @@ export function Home() {
         </div>
       </UserCardContainer>
     </>
-  )
+  );
 }

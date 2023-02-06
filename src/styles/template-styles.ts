@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const UserCardContainer = styled.div`
   font-family: 'ms_sans_serif';
@@ -25,4 +25,4 @@ export const UserCardContainer = styled.div`
       flex-direction: column;
     }
   }
-`
+`;

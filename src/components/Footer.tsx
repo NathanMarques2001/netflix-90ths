@@ -1,4 +1,4 @@
-import { Anchor } from 'react95'
+import { Anchor } from 'react95';
 
 export function Footer() {
   return (
@@ -20,5 +20,5 @@ export function Footer() {
         </Anchor>
       </p>
     </div>
-  )
+  );
 }

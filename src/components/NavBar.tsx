@@ -1,5 +1,6 @@
-import { ComponentMeta } from '@storybook/react'
-import { useState } from 'react'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ComponentMeta } from '@storybook/react';
 import {
   AppBar,
   TextInput,
@@ -9,21 +10,21 @@ import {
   MenuListItem,
   Separator,
   MenuList,
-} from 'react95'
-import logoIMG from '../assets/logo.svg'
-import Arrow from '../assets/arrow.png'
-import { Navbar } from '../styles/component-styles'
-import Photo from '../assets/photo.png'
-import { Link } from 'react-router-dom'
+} from 'react95';
+
+import logoIMG from '../assets/logo.svg';
+import Arrow from '../assets/arrow.png';
+import { Navbar } from '../styles/component-styles';
+import Photo from '../assets/photo.png';
 
 export default {
   title: 'Environment/AppBar',
   component: AppBar,
   decorators: [(story) => <Navbar>{story()}</Navbar>],
-} as ComponentMeta<typeof AppBar>
+} as ComponentMeta<typeof AppBar>;
 
 export function NavBar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -95,9 +96,9 @@ export function NavBar() {
         </AppBar>
       </Navbar>
     </>
-  )
+  );
 }
 
 NavBar.story = {
   name: 'NavBar',
-}
+};

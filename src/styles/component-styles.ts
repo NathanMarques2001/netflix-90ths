@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Card = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const Card = styled.div`
   img {
     width: 105%;
   }
-`
+`;
 
 export const LoadingBar = styled.div`
   height: 100vh;
@@ -38,7 +38,7 @@ export const LoadingBar = styled.div`
     justify-content: center;
   }
 
-`
+`;
 
 export const Navbar = styled.div`
   font-family: 'ms_sans_serif';
@@ -79,14 +79,14 @@ export const Navbar = styled.div`
       margin-top: 40%;
     }
   }
-`
+`;
 
 export const MovieType = styled.div`
   font-family: 'ms_sans_serif';
   font-weight: bold;
   font-size: 30px;
 
-`
+`;
 
 export const Banner = styled.div`
   font-family: 'ms_sans_serif';
@@ -98,10 +98,10 @@ export const Banner = styled.div`
     transition: all ease 0.2s;
     cursor: pointer;
   }
-`
+`;
 export const ContainerImg = styled.div`
 transform: scale(1.1);
-`
+`;
 
 export const ButtonContainer = styled.div`
   position: absolute;
@@ -109,5 +109,5 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95vw;
-`
+  width: 92.5vw;
+`;

@@ -1,27 +1,28 @@
-import { HomeListItem } from '../utils/interfaces'
-import React, { useState } from 'react'
-import { Banner, ButtonContainer, MovieType } from '../styles/component-styles'
-import { Frame, WindowContent, GroupBox, Button } from 'react95'
+import React, { useState } from 'react';
+import { Frame, WindowContent, GroupBox, Button } from 'react95';
+
+import { HomeListItem } from '../utils/interfaces';
+import { Banner, ButtonContainer, MovieType } from '../styles/component-styles';
 
 export const MovieRow: React.FC<HomeListItem> = ({ title, items }) => {
-  const [open, setOpen] = useState(false)
-  const [scrollX, setScrollX] = useState(0)
+  const [open, setOpen] = useState(false);
+  const [scrollX, setScrollX] = useState(0);
 
   const handleLeftArrow = () => {
-    let x = scrollX + Math.round(window.innerWidth / 2)
+    let x = scrollX + Math.round(window.innerWidth / 2);
     if (x > 0) {
-      x = 0
+      x = 0;
     }
-    setScrollX(x)
-  }
+    setScrollX(x);
+  };
   const handleRightArrow = () => {
-    let x = scrollX - Math.round(window.innerWidth / 2)
-    let listWidth = items.length * 211.5
+    let x = scrollX - Math.round(window.innerWidth / 2);
+    let listWidth = items.length * 211.5;
     if (window.innerWidth - listWidth > x) {
-      x = window.innerWidth - listWidth
+      x = window.innerWidth - listWidth;
     }
-    setScrollX(x)
-  }
+    setScrollX(x);
+  };
   return (
     <div>
       <WindowContent>
@@ -69,5 +70,5 @@ export const MovieRow: React.FC<HomeListItem> = ({ title, items }) => {
         </GroupBox>
       </WindowContent>
     </div>
-  )
-}
+  );
+};

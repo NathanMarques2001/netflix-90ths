@@ -1,16 +1,16 @@
-import { ComponentMeta } from '@storybook/react'
-import { Avatar, GroupBox } from 'react95'
-import { Link } from 'react-router-dom'
+import { ComponentMeta } from '@storybook/react';
+import { Avatar, GroupBox } from 'react95';
+import { Link } from 'react-router-dom';
 
-import Photo from '../assets/photo.png'
-import { Card } from '../styles/component-styles'
-import { User } from '../utils/interfaces'
+import Photo from '../assets/photo.png';
+import { Card } from '../styles/component-styles';
+import { User } from '../utils/interfaces';
 
 export default {
   title: 'Other/Avatar',
   component: Avatar,
   decorators: [(story) => <Card>{story()}</Card>],
-} as ComponentMeta<typeof Avatar>
+} as ComponentMeta<typeof Avatar>;
 
 export function UserCard({ name }: User) {
   return (
@@ -28,9 +28,9 @@ export function UserCard({ name }: User) {
         </GroupBox>
       </Link>
     </Card>
-  )
+  );
 }
 
 UserCard.story = {
   name: 'UserCard',
-}
+};

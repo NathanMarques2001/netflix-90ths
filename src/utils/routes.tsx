@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { ThemeProvider } from 'styled-components'
-import original from 'react95/dist/themes/original'
-import { GlobalStyles } from '../styles/global-style'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import original from 'react95/dist/themes/original';
+import { GlobalStyles } from '../styles/global-style';
 
-import { Home } from '../templates/Home'
-import { Main } from '../templates/Main'
+import { Home } from '../templates/Home';
+import { Main } from '../templates/Main';
 
 export function PageRoutes() {
   return (
@@ -19,5 +19,5 @@ export function PageRoutes() {
         </ThemeProvider>
       </Router>
     </>
-  )
+  );
 }

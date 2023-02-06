@@ -1,5 +1,6 @@
-import { Window, WindowContent, GroupBox, Button } from 'react95'
-import { FeatureMovieData } from '../utils/interfaces'
+import { Window, WindowContent, GroupBox, Button } from 'react95';
+
+import { FeatureMovieData } from '../utils/interfaces';
 
 export function FeatureMovie({ ...props }: FeatureMovieData) {
   return (
@@ -16,24 +17,31 @@ export function FeatureMovie({ ...props }: FeatureMovieData) {
       <Window
         style={{
           marginLeft: '10px',
-          maxWidth: '35%',
+          width: '35%',
+          minWidth: '350px',
           fontFamily: 'ms_sans_serif',
         }}
       >
         <WindowContent>
-          <GroupBox label={<p style={{
-            fontWeight: 'bold'
-          }}>{props.title}</p>}>{props.overview}</GroupBox>
-          <GroupBox>
-            {props.genres.map((genre, index) => (
-              `${genre.name}, `
-            ))}
+          <GroupBox
+            label={
+              <p
+                style={{
+                  fontWeight: 'bold',
+                }}
+              >
+                {props.title}
+              </p>
+            }
+          >
+            {props.overview}
           </GroupBox>
+          <GroupBox>{props.genres.map((genre) => `${genre.name}, `)}</GroupBox>
           <GroupBox>
             <Button fullWidth>Assistir</Button>
           </GroupBox>
         </WindowContent>
       </Window>
     </div>
-  )
+  );
 }
