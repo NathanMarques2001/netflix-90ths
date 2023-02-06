@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/netflix-90ths/static/js/main.2674f8cd.js",
+    "static/media/logo.svg": "/netflix-90ths/static/media/logo.c5e6f18731b94ef88229126f3a9671d9.svg",
+    "static/media/ms_sans_serif.woff2": "/netflix-90ths/static/media/ms_sans_serif.0348082abb503fb6a8c2.woff2",
+    "static/media/ms_sans_serif_bold.woff2": "/netflix-90ths/static/media/ms_sans_serif_bold.7fcf57cc6e87ecddbf64.woff2",
+    "index.html": "/netflix-90ths/index.html",
+    "main.2674f8cd.js.map": "/netflix-90ths/static/js/main.2674f8cd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.2674f8cd.js"
+  ]
+}
