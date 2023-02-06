@@ -13,8 +13,8 @@ export function PageRoutes() {
         <GlobalStyles />
         <ThemeProvider theme={original}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/main-page" element={<Main />} />
+            <Route path="/netflix-90ths" element={<Home />} />
+            <Route path="/main" element={<Main />} />
           </Routes>
         </ThemeProvider>
       </Router>

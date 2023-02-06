@@ -25,8 +25,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write 'src/**/*.{ts,tsx}'"
+    "prettier": "prettier --write 'src/**/*.{ts,tsx}'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://nathanmarques2001.github.io/netflix-90ths",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -50,6 +53,7 @@
     "@types/styled-components": "^5.1.26",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.3",
     "react-router-dom": "^6.7.0"
   }

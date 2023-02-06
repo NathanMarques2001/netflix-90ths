@@ -15,7 +15,7 @@ export default {
 export function UserCard({ name }: User) {
   return (
     <Card>
-      <Link to="/main-page">
+      <Link to="/main">
         <GroupBox>
           <div>
             <Avatar square size={200}>

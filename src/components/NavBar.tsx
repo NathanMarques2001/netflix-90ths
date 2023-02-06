@@ -86,7 +86,7 @@ export function NavBar() {
                     <MenuListItem size="sm">Central de ajuda</MenuListItem>
                     <Separator />
                     <MenuListItem size="sm">
-                      <Link to="/">Sair da Netflix</Link>
+                      <Link to="/netflix-90ths">Sair da Netflix</Link>
                     </MenuListItem>
                   </MenuList>
                 )}

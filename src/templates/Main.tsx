@@ -4,8 +4,8 @@ import { Footer } from '../components/Footer';
 
 export function Main() {
   return (
-    <div className="page">
-      {<NavBar />}
+    <div>
+      <NavBar />
       <MovieList />
       <Footer />
     </div>

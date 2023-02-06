@@ -1,6 +1,6 @@
 export interface User {
   name: string;
-};
+}
 
 export interface FilmOrSerie {
   id: number;
@@ -8,21 +8,22 @@ export interface FilmOrSerie {
   adult: boolean;
   original_title?: string;
   poster_path?: string;
-};
+}
 
 export interface HomeListItem {
   slug: string;
   title: string;
   items: FilmOrSerie[];
   adult: boolean;
-};
+}
 
 export interface FeatureMovieData {
   title: string;
   backdrop_path: string;
-  genres: [{
-    name: string,
-  }
+  genres: [
+    {
+      name: string;
+    },
   ];
   overview: string;
-};
+}
